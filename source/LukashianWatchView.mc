@@ -111,6 +111,7 @@ class LukashianWatchView extends WatchUi.WatchFace {
         var timeString = proportionPassed.format("%04d");
         var dateString = day + " - " + year;
 
+        //Note: the actual color to be displayed depends on the device; devices with 24-bit color, for example, will "round" it to (0, 4, 57)
         dc.setColor(Graphics.COLOR_WHITE, (0 << 24) | (0 << 16) | (4 << 8) | 61);
         dc.clear();
 
